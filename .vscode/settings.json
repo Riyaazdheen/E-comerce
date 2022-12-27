@@ -1,0 +1,7 @@
+{
+    "html.format.enable": true,
+    "[html]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.defaultFormatter": "ms-toolsai.jupyter"
+}

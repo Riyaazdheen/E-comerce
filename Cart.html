@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4711bb5db7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-secondary">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa fa-amazon" aria-hidden="true"></i> E-Commerce</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form>
+          <a class="btn btn-warning btn-sm m-3" href="./Cart.html"
+            ><i class="fa fa-cart-plus" aria-hidden="true"></i
+            ><span class="badge m-2 bg-secondary">4</span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid card border-secondary mt-5"
+      style="width: 30rem"
+    >
+      <div class="card-body">
+        <h5 class="card-title">Your E-commerce cart is Empty</h5>
+        <h6 class="card-subtitle mb-2 text-muted">shop today's deal</h6>
+        <img
+          style="width: 15rem"
+          src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg"
+          alt=""
+        />
+        <a href="#" class="card-link btn btn-warning"
+          >Sign in to your account</a
+        >
+        <a href="#" class="card-link btn btn-warning">sign up now</a>
+      </div>
+    </div>
+    <div
+      class="container-fluid card border-secondary mt-2"
+      style="width: 30rem; height: 3rem"
+    >
+      <div class="card-body"></div>
+    </div>
+    <div class="container card mt-4" style="font-size: 1em">
+      <div class="card-body">
+        The price and availability of items at Amazon.in are subject to change.
+        The shopping cart is a temporary place to store a list of your items and
+        reflects each item's most recent price. Do you have a promotional code?
+        We'll ask you to enter your claim code when it's time to pay.
+      </div>
+    </div>
+    <div class="card text-center mt-5" style="height: 10rem">
+      <h6 class="card-header">see personalized recomdation</h6>
+      <div class="card-body">
+        <a
+          href="#"
+          class="card-link btn btn-warning fw-bolder"
+          style="width: 15rem"
+          >Sign in</a
+        >
+        <p class="card-text">
+          New Customer ? <a href="">Start here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
