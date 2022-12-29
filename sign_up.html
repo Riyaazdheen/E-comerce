@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4711bb5db7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: white;overflow-x: hidden;">
+    <!-- logo -->
+    <div
+      class="container-fluid websitelogo text-center pt-2 pb-2"
+      style="background-color: black"
+    >
+      <a class="navbar-brand" href=""
+        ><img src="/assets/img/E-Commerce.png" alt="Bootstrap" height="40"
+      /></a>
+    </div>
+
+    <!-- sign up -->
+    <div class="container card" style="width: 30rem">
+      <div class="card-body">
+        <h2 class="card-title">Create Account</h2>
+
+        <!--sign up form  -->
+        <!--Name section  -->
+        <form>
+          <div class="mt-3">
+            <label for="validationDefault01" class="form-label fw-bold"
+              >First name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefault01"
+              placeholder="First and last name"
+              required
+            />
+          </div>
+          <!-- moblie number section -->
+          <div class="mt-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold"
+              >Mobile number</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="mobile number"
+              required
+            />
+          </div>
+
+          <!--Email section  -->
+          <div class="mt-3 mb-3">
+            <label for="exampleInputEmail1" class="form-label fw-bold"
+              >Email (optional)</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <!-- password section -->
+          <div>
+            <label for="exampleInputPassword1" class="form-label fw-bold"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              placeholder="At least 6 character"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div id="emailHelp" class="form-text mt-1 mb-4">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> Password must
+            be at least 6 characters.
+          </div>
+
+          <p>
+            By enrolling your mobile phone number, you consent to receive
+            automated security notifications via text message from Amazon.
+            Message and data rates may apply.
+          </p>
+
+          <!-- submit section -->
+          <button
+            type="submit"
+            class="container btn btn-warning border-secondary"
+          >
+            continue
+          </button>
+          <hr />
+          <!-- others -->
+          <p>
+            Already have an account?
+            <a href="sign_in.html" style="text-decoration: none"
+              >Sign in
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
+            ></a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <footer class="text-center text-black-50">
+      <hr/>
+      <div class="container">
+        <a
+          class="btn btn-link btn-floating m-1"
+          style="text-decoration: none; font-size: 15px"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          >Conditions of Use</a
+          >
+          
+          <a
+          class="btn btn-link btn-floating m-1"
+          style="text-decoration: none; font-size: 15px"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          >privacy Notice</a
+          >
+          
+          <a
+          class="btn btn-link btn-floating m-1"
+          style="text-decoration: none; font-size: 15px"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          >Help</a
+          ><br>
+          © 2022 Copyright:
+          <a class="text-primary btn p-0" href="https://github.com/Riyaazdheen"
+            >RiyaazDheen <i class="fa fa-heart text-danger" aria-hidden="true"></i
+          ></a>
+        </div>
+    </footer>
+  </body>
+  </html>
+  

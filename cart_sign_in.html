@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-secondary">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html"
+              <a class="nav-link active" aria-current="page" href="./index.html"
                 >All product</a
               >
             </li>
@@ -67,51 +67,51 @@
         </div>
       </div>
     </nav>
-    <!-- NAVBAR -->
-    <!-- cart content -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-8">
-          <div class="row row-cols-1">
-            <div class="col">
-              <div class="h4">Shopping Cart</div>
-              <a href="">Deselect all item</a>
-              <div class="card mt-3">
-                <div class="card-header bg-warning">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text text-danger">Rs 579/-</p>
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa fa-plus" aria-hidden="true"></i
-                  ></a>
-                  1
-                  <a href="#" class="btn btn-warning"
-                    ><i class="fa fa-minus" aria-hidden="true"></i
-                  ></a>
-                  <a href="#" class="btn btn-danger">Remove</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <div class="card-header">
-              <a class="fw-bolder" style="color: rgb(87, 76, 76)" href=""
-                ><i class="fa-solid fa-circle-exclamation"></i>Add Rs.120 of
-                eligibe items to your order to quality for free delivery.</a
-              >
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Subtotal(2 items) : Rs.257</h5>
-              <p>This order contains a gift</p>
-              <a href="#" class="btn btn-warning">Proceed to pay</a>
-            </div>
-          </div>
-        </div>
+    <div
+      class="container-fluid card border-secondary mt-5"
+      style="width: 30rem"
+    >
+      <div class="card-body">
+        <h5 class="card-title">Your E-commerce cart is Empty</h5>
+        <h6 class="card-subtitle mb-2 text-muted">shop today's deal</h6>
+        <img
+          style="width: 15rem"
+          src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg"
+          alt=""
+        />
+        <a href="#" class="card-link btn btn-warning"
+          >Sign in to your account</a
+        >
+        <a href="#" class="card-link btn btn-warning">sign up now</a>
       </div>
     </div>
-
+    <div
+      class="container-fluid card border-secondary mt-2"
+      style="width: 30rem; height: 3rem"
+    >
+      <div class="card-body"></div>
+    </div>
+    <div class="container card mt-4" style="font-size: 1em">
+      <div class="card-body">
+        The price and availability of items at E-Commerce.in are subject to
+        change. The shopping cart is a temporary place to store a list of your
+        items and reflects each item's most recent price. Do you have a
+        promotional code? We'll ask you to enter your claim code when it's time
+        to pay.
+      </div>
+    </div>
+    <div class="card text-center mt-5" style="height: 10rem">
+      <h6 class="card-header">see personalized recomdation</h6>
+      <div class="card-body">
+        <a
+          href="#"
+          class="card-link btn btn-warning fw-bolder"
+          style="width: 15rem"
+          >Sign in</a
+        >
+        <p class="card-text">New Customer ? <a href="">Start here</a></p>
+      </div>
+    </div>
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
