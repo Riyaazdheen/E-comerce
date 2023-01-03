@@ -3,5 +3,12 @@
     "[html]": {
         "editor.suggest.insertMode": "replace"
     },
-    "editor.defaultFormatter": "ms-toolsai.jupyter"
+    "editor.defaultFormatter": "ms-toolsai.jupyter",
+    "[python]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true,
+    },
+    "python.formatting.autopep8Args": [],
+    "python.formatting.provider": "autopep8",
+    "python.defaultInterpreterPath": "C:/Users/riyaa/miniconda3/envs/Django-ecommerce/python.exe"
 }

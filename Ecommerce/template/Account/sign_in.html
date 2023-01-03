@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,11 +32,10 @@
       class="container-fluid websitelogo text-center pt-2 pb-2"
       style="background-color: black"
     >
-      <a class="navbar-brand" href="index.html"
-        ><img src="/assets/img/E-Commerce.png" alt="Bootstrap" height="40"
+      <a class="navbar-brand" href="{% url 'home:home' %}"
+        ><img src="{% static 'assets\img\E-Commerce.png' %}" alt="Bootstrap" height="40"
       /></a>
     </div>
-
     <!-- sign in -->
     <div
       class="container-fluid card border-secondary mt-3"
@@ -43,27 +43,19 @@
     >
       <div class="card-body">
         <h2 class="card-title">Sign in</h2>
-        <div class="mb-3">
-          <label
-            for="exampleFormControlInput1"
-            class="form-label mt-3"
-            style="font-weight: 700"
-            >Email address or mobile phone number</label
-          >
-          <input
-            type="email"
-            class="form-control mb-3"
-            id="exampleFormControlInput1"
-          />
-          <div class="col-auto">
-            <button
-              type="submit"
-              class="btn btn-warning mb-3 w-100 text-center border-secondary fw-bolder"
-            >
-              continue
-            </button>
-          </div>
-        </div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="container-fluid btn btn-warning mt-2">Sign in</button>
+        </form>
       </div>
       <p class="fw-bold">
         By continuing, you to E-commerce's 
@@ -75,13 +67,14 @@
     <div class="container new_login ">
       <p class="text-center mb-2 mt-4" style="color: rgba(110, 108, 106, 0.855);font-weight: 600;">New to E-Commerce?</p>
     </div>
-    <div class="container col-auto">
-      <button
+    <div class="d-flex justify-content-center">
+      <a
         type="submit"
-        class="btn btn-secondary mt-0 mb-3 w-100 text-center border-secondary fw-bolder"
+        class="btn btn-secondary mt-0 mb-3 text-center border-secondary fw-bolder"
+        href="{% url 'account:signup' %}"
       >
         Create your amazon account
-      </button>
+    </a>
     </div>
     <footer class="text-center text-black-50">
       <!-- Grid container -->
@@ -118,7 +111,7 @@
       <!-- copyright -->
       <div class="text-center pt-2">
         © 2022 Copyright:
-        <a class="text-primary btn p-0" href="https://github.com/Riyaazdheen"
+        <a class="text-primary btn p-0 text-decoration-none" href="https://github.com/Riyaazdheen"
           >RiyaazDheen <i class="fa fa-heart text-danger" aria-hidden="true"></i
         ></a>
       </div>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,14 +26,17 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body style="background-color: white;overflow-x: hidden;">
+  <body style="background-color: white; overflow-x: hidden">
     <!-- logo -->
     <div
       class="container-fluid websitelogo text-center pt-2 pb-2"
       style="background-color: black"
     >
-      <a class="navbar-brand" href=""
-        ><img src="/assets/img/E-Commerce.png" alt="Bootstrap" height="40"
+      <a class="navbar-brand" href="{% url 'home:home' %}"
+        ><img
+          src="{% static 'assets\img\E-Commerce.png' %}"
+          alt="Bootstrap"
+          height="40"
       /></a>
     </div>
 
@@ -43,21 +47,24 @@
 
         <!--sign up form  -->
         <!--Name section  -->
-        <form>
+        <form method="post">
+          {% csrf_token %}
           <div class="mt-3">
             <label for="validationDefault01" class="form-label fw-bold"
-              >First name</label
+              >Username</label
             >
             <input
               type="text"
-              class="form-control"
+              class="form-control {{valid}}"
               id="validationDefault01"
-              placeholder="First and last name"
+              placeholder="Username"
+              name="username"
               required
             />
+            <div class="invalid-feedback">{{Error}}</div>
           </div>
           <!-- moblie number section -->
-          <div class="mt-3">
+          <!-- <div class="mt-3">
             <label for="exampleFormControlInput1" class="form-label fw-bold"
               >Mobile number</label
             >
@@ -66,9 +73,10 @@
               class="form-control"
               id="exampleFormControlInput1"
               placeholder="mobile number"
+              name="mobilenumber"
               required
             />
-          </div>
+          </div> -->
 
           <!--Email section  -->
           <div class="mt-3 mb-3">
@@ -80,6 +88,7 @@
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
+              name="email"
             />
             <div id="emailHelp" class="form-text">
               We'll never share your email with anyone else.
@@ -96,6 +105,7 @@
               class="form-control"
               placeholder="At least 6 character"
               id="exampleInputPassword1"
+              name="password"
             />
           </div>
           <div id="emailHelp" class="form-text mt-1 mb-4">
@@ -112,15 +122,15 @@
           <!-- submit section -->
           <button
             type="submit"
-            class="container btn btn-warning border-secondary"
+            class="btn btn-secondary mt-0 mb-3 text-center border-secondary fw-bolder"
           >
-            continue
+            Sign Up
           </button>
           <hr />
           <!-- others -->
           <p>
             Already have an account?
-            <a href="sign_in.html" style="text-decoration: none"
+            <a href="{% url 'account:signin' %}" style="text-decoration: none"
               >Sign in
               <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i
             ></a>
@@ -129,7 +139,7 @@
       </div>
     </div>
     <footer class="text-center text-black-50">
-      <hr/>
+      <hr />
       <div class="container">
         <a
           class="btn btn-link btn-floating m-1"
@@ -138,31 +148,32 @@
           role="button"
           data-mdb-ripple-color="dark"
           >Conditions of Use</a
-          >
-          
-          <a
+        >
+
+        <a
           class="btn btn-link btn-floating m-1"
           style="text-decoration: none; font-size: 15px"
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
           >privacy Notice</a
-          >
-          
-          <a
+        >
+
+        <a
           class="btn btn-link btn-floating m-1"
-          style="text-decoration: none; font-size: 15px"
+          style="font-size: 15px"
           href="#!"
           role="button"
           data-mdb-ripple-color="dark"
           >Help</a
-          ><br>
-          © 2022 Copyright:
-          <a class="text-primary btn p-0" href="https://github.com/Riyaazdheen"
-            >RiyaazDheen <i class="fa fa-heart text-danger" aria-hidden="true"></i
-          ></a>
-        </div>
+        ><br />
+        © 2022 Copyright:
+        <a
+          class="text-primary btn p-0 text-decoration-none"
+          href="https://github.com/Riyaazdheen"
+          >RiyaazDheen <i class="fa fa-heart text-danger" aria-hidden="true"></i
+        ></a>
+      </div>
     </footer>
   </body>
-  </html>
-  
+</html>
